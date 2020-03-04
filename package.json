@@ -28,7 +28,7 @@
     "extends": "react-app"
   },
 
-  "homepage": "https://navydrum.github.io/pr",
+  "homepage": "https://navydrum.github.io/",
   
   "browserslist": {
     "production": [
