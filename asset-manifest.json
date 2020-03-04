@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/pr/static/css/main.32077b26.chunk.css",
-    "main.js": "/pr/static/js/main.b3189125.chunk.js",
-    "main.js.map": "/pr/static/js/main.b3189125.chunk.js.map",
-    "runtime-main.js": "/pr/static/js/runtime-main.7de7db3c.js",
-    "runtime-main.js.map": "/pr/static/js/runtime-main.7de7db3c.js.map",
-    "static/js/2.82b7fa12.chunk.js": "/pr/static/js/2.82b7fa12.chunk.js",
-    "static/js/2.82b7fa12.chunk.js.map": "/pr/static/js/2.82b7fa12.chunk.js.map",
-    "index.html": "/pr/index.html",
-    "precache-manifest.048b58c8fe71758267f74ce9f0092cbc.js": "/pr/precache-manifest.048b58c8fe71758267f74ce9f0092cbc.js",
-    "service-worker.js": "/pr/service-worker.js",
-    "static/css/main.32077b26.chunk.css.map": "/pr/static/css/main.32077b26.chunk.css.map",
-    "static/js/2.82b7fa12.chunk.js.LICENSE.txt": "/pr/static/js/2.82b7fa12.chunk.js.LICENSE.txt",
-    "static/media/RotateChampList.css": "/pr/static/media/champion.38fb1e86.png",
-    "static/media/noIcon.jpg": "/pr/static/media/noIcon.9b4fd0eb.jpg",
-    "static/media/silver_3.png": "/pr/static/media/silver_3.180877e8.png"
+    "main.css": "/static/css/main.9eb0455b.chunk.css",
+    "main.js": "/static/js/main.328ed01e.chunk.js",
+    "main.js.map": "/static/js/main.328ed01e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.01481b62.js",
+    "runtime-main.js.map": "/static/js/runtime-main.01481b62.js.map",
+    "static/js/2.f44123f6.chunk.js": "/static/js/2.f44123f6.chunk.js",
+    "static/js/2.f44123f6.chunk.js.map": "/static/js/2.f44123f6.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.73761dacef59a3f3afa52d1139cc2813.js": "/precache-manifest.73761dacef59a3f3afa52d1139cc2813.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.9eb0455b.chunk.css.map": "/static/css/main.9eb0455b.chunk.css.map",
+    "static/js/2.f44123f6.chunk.js.LICENSE.txt": "/static/js/2.f44123f6.chunk.js.LICENSE.txt",
+    "static/media/RotateChampList.css": "/static/media/champion.38fb1e86.png",
+    "static/media/noIcon.jpg": "/static/media/noIcon.9b4fd0eb.jpg",
+    "static/media/silver_3.png": "/static/media/silver_3.180877e8.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.7de7db3c.js",
-    "static/js/2.82b7fa12.chunk.js",
-    "static/css/main.32077b26.chunk.css",
-    "static/js/main.b3189125.chunk.js"
+    "static/js/runtime-main.01481b62.js",
+    "static/js/2.f44123f6.chunk.js",
+    "static/css/main.9eb0455b.chunk.css",
+    "static/js/main.328ed01e.chunk.js"
   ]
 }
