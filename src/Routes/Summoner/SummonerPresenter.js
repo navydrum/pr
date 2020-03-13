@@ -5,6 +5,7 @@ import Loader from "Components/Loader";
 import Section from "Components/Section";
 import Match from "Components/Match";
 
+
 const Container = styled.div`
     height : calc(100vh - 50px);
     width : 100%;
@@ -102,10 +103,19 @@ const UserMatchSection = styled.div`
 float: right;
 width: 65%;
 `;
+
+const MoreViewMatchBtn = styled.div`
+margin-top: 25px;
+width: 100%;
+position: relative;
+padding: 10px;
+`;
+
+const picUrl = "http://lol.lvup.kr/dragontail";
 const SummonerPresenter = ({summonerData, matchData, error, loading}) => loading ? <Loader /> : <Container>
     <UserSection>
         <Content>
-            <Cover bgImage={summonerData.profileIconImage ? require("../../img/noIcon.jpg") : require("../../img/noIcon.jpg")}></Cover>
+            <Cover bgImage={summonerData.profileIconImage ? picUrl + `${summonerData.profileIconImage}` : require("../../img/noIcon.jpg")}></Cover>
             <UserContent>
                 <ItemContaitner>
                     <SummonerID><span>{summonerData.name}</span></SummonerID>
@@ -151,6 +161,7 @@ const SummonerPresenter = ({summonerData, matchData, error, loading}) => loading
                                         data = { match }
                                        />))}
                 </Section>
+                <MoreViewMatchBtn>dddddddd</MoreViewMatchBtn>
             </UserMatchSection>
         </MatchSection>
     </UserSection>

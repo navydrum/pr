@@ -16,10 +16,8 @@ const Title = styled.span`
 
 const Grid = styled.div`
     margin-top: 25px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill,82px);
-    grid-gap: 5px;
-    margin-left: 85px;
+    text-align: center;
+  
 `;
 
 //children 은 react prop

@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import "Components/SmallChampImg.css";
 import { Link } from "react-router-dom";
 
 const Container = styled.div`
@@ -35,7 +36,7 @@ const GameType = styled.h3`
     z-index: 1;
 `;
 const GameChamp = styled.div`
-    width: 140px;
+    width: 220px;
     font-size: 0;
     padding-top: 10px;
     padding-left: 10px;
@@ -47,8 +48,8 @@ const GameChampInfo = styled.div`
 `;
 const ChampImgArea = styled.div`
     display: inline-block;
-    width: 62px;
-    height: 62px;
+    width: 75px;
+    height: 75px;
     vertical-align: middle;
     border-radius: 50%;
     overflow: hidden;
@@ -157,9 +158,7 @@ div{
     padding-top: 3px;
     text-align: left;
     white-space: nowrap;
-        img{
-            width: 20px;
-        }
+        
         div{
             padding-left : 22px;
             font-size : 13px;
@@ -228,49 +227,49 @@ const Match = ({ id, win, data }) => (
         <GameItem className="match-history__match__column match-history__match__items">
                     <GameItemList>
                         <Item className="match-history__match__item tooltip tooltipstered">
-                            {getInGameItem(data)[0] != "" ? <img src={getInGameItem(data)[0]} alt="처형인의 대검"></img> : ""}
+                            {getInGameItem(data)[0] !== "" ? <img src={getInGameItem(data)[0]} alt="처형인의 대검"></img> : ""}
                         </Item>
                         <Item className="match-history__match__item tooltip tooltipstered">
-                            {getInGameItem(data)[1] != "" ? <img src={getInGameItem(data)[1]} alt="처형인의 대검"></img> : ""}
+                            {getInGameItem(data)[1] !== "" ? <img src={getInGameItem(data)[1]} alt="처형인의 대검"></img> : ""}
                         </Item>
                         <Item className="match-history__match__item tooltip tooltipstered">
-                            {getInGameItem(data)[2] != "" ? <img src={getInGameItem(data)[2]} alt="처형인의 대검"></img> : ""}
+                            {getInGameItem(data)[2] !== "" ? <img src={getInGameItem(data)[2]} alt="처형인의 대검"></img> : ""}
                         </Item>
                         <Item className="match-history__match__item tooltip tooltipstered">
-                            {getInGameItem(data)[6] != "" ? <img src={getInGameItem(data)[6]} alt="처형인의 대검"></img> : ""}
+                            {getInGameItem(data)[6] !== "" ? <img src={getInGameItem(data)[6]} alt="처형인의 대검"></img> : ""}
                         </Item>
                         <Item className="match-history__match__item tooltip tooltipstered">
-                            {getInGameItem(data)[3] != "" ? <img src={getInGameItem(data)[3]} alt="처형인의 대검"></img> : ""}
+                            {getInGameItem(data)[3] !== "" ? <img src={getInGameItem(data)[3]} alt="처형인의 대검"></img> : ""}
                         </Item>
                         <Item className="match-history__match__item tooltip tooltipstered">
-                            {getInGameItem(data)[4] != "" ? <img src={getInGameItem(data)[4]} alt="처형인의 대검"></img> : ""}
+                            {getInGameItem(data)[4] !== "" ? <img src={getInGameItem(data)[4]} alt="처형인의 대검"></img> : ""}
                             
                         </Item>
                         <Item className="match-history__match__item tooltip tooltipstered">
-                            {getInGameItem(data)[5] != "" ? <img src={getInGameItem(data)[5]} alt="처형인의 대검"></img> : ""}
+                            {getInGameItem(data)[5] !== "" ? <img src={getInGameItem(data)[5]} alt="처형인의 대검"></img> : ""}
                         </Item>
                     </GameItemList>
             </GameItem>
-            <WithPlayer>
-                <div>
+            <div className="matchWithPlayer">
+                <div className = "matchTeam" >
                     {data.matchInfo.blue.player.map(player => (
-                        <div key={player.id}>
-                            <a href="https://poro.gg/ko/s/kr/t%EC%9C%BCt" target="_blank">
-                            <img src="http://ddragon.leagueoflegends.com/cdn/10.3.1/img/champion/Mordekaiser.png" alt="모데카이저" className="match-history__match__fellow__champion tooltip tooltipstered"></img>
-                            <div className="match-history__match__fellow__name">{player.SummonerName}</div>
-                            </a>
+                        <div className="userMatchArea" key={player.ChampionId}>
+                           
+                                <div className={'spc16 i'+player.ChampionId}/>
+                                <div className="userMatchId">{player.SummonerName}</div>
+                         
                         </div>))}
                 </div>
-                <div>
+                <div className = "matchTeam" >
                         {data.matchInfo.red.player.map(player => (
-                        <div key={player.id}>
-                            <a href="https://poro.gg/ko/s/kr/t%EC%9C%BCt" target="_blank">
-                            <img src="http://ddragon.leagueoflegends.com/cdn/10.3.1/img/champion/Mordekaiser.png" alt="모데카이저" className="match-history__match__fellow__champion tooltip tooltipstered"></img>
-                                <div className="match-history__match__fellow__name">{player.SummonerName}</div>
-                            </a>
+                        <div className="userMatchArea" key={player.ChampionId}>
+                            
+                                <div className={'spc16 i'+player.ChampionId}/>
+                                <div className="userMatchId">{player.SummonerName}</div>
+                            
                         </div>))}
                     </div>
-            </WithPlayer>
+            </div>
     </Content>
 </Container>
 );

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import Loader from "Components/Loader";
 import RotateSection from "Components/RotateSection";
 import "Components/RotateChampList.css";
-
+import Helmet from "react-helmet";
 
 const Container = styled.div`
     padding-top : 50px;
@@ -43,12 +43,18 @@ const MainPresenter = ({ rotateChampArr, loading, searchTerm, handleSubmit, erro
 <Loader /> 
     : 
 <Container>
+    <Helmet>
+        <title>Lv.Up</title>
+    </Helmet>
     <Form onSubmit={handleSubmit}>
         <Input type="text" placeholder="Search.." maxLength="30" value={searchTerm} onChange={updateTerm} />
     </Form>
     {rotateChampArr && rotateChampArr.length > 0 && (
         <RotateSection title="RotateChamp">
-            {rotateChampArr.map((value, index) => <div key={index} className={'rotateChampArea champImg i'+value}>{value}</div>)}
+            {rotateChampArr.map((value, index) => <Link to={{pathname:"/{value}",
+                                                            state : {
+                                                                key : value
+                                                            }}}><div key={index} className={'rotateChampArea champImg i'+value}></div></Link>)}
         </RotateSection>
     )}
       
