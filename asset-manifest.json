@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/pr/static/css/main.b90e24d5.chunk.css",
-    "main.js": "/pr/static/js/main.16a225ad.chunk.js",
-    "main.js.map": "/pr/static/js/main.16a225ad.chunk.js.map",
-    "runtime-main.js": "/pr/static/js/runtime-main.7de7db3c.js",
-    "runtime-main.js.map": "/pr/static/js/runtime-main.7de7db3c.js.map",
-    "static/js/2.3b58c478.chunk.js": "/pr/static/js/2.3b58c478.chunk.js",
-    "static/js/2.3b58c478.chunk.js.map": "/pr/static/js/2.3b58c478.chunk.js.map",
-    "index.html": "/pr/index.html",
-    "precache-manifest.ef47dad9de4d0c1dde02069242c695e4.js": "/pr/precache-manifest.ef47dad9de4d0c1dde02069242c695e4.js",
-    "service-worker.js": "/pr/service-worker.js",
-    "static/css/main.b90e24d5.chunk.css.map": "/pr/static/css/main.b90e24d5.chunk.css.map",
-    "static/js/2.3b58c478.chunk.js.LICENSE.txt": "/pr/static/js/2.3b58c478.chunk.js.LICENSE.txt",
-    "static/media/RotateChampList.css": "/pr/static/media/champion.38fb1e86.png",
-    "static/media/SmallChampImg.css": "/pr/static/media/champion16.79137220.png",
-    "static/media/noIcon.jpg": "/pr/static/media/noIcon.9b4fd0eb.jpg",
-    "static/media/silver_3.png": "/pr/static/media/silver_3.180877e8.png"
+    "main.css": "/static/css/main.064eeedf.chunk.css",
+    "main.js": "/static/js/main.16a225ad.chunk.js",
+    "main.js.map": "/static/js/main.16a225ad.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.01481b62.js",
+    "runtime-main.js.map": "/static/js/runtime-main.01481b62.js.map",
+    "static/js/2.31ac0301.chunk.js": "/static/js/2.31ac0301.chunk.js",
+    "static/js/2.31ac0301.chunk.js.map": "/static/js/2.31ac0301.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.fc3e915393a0fd4e0e9f3a45573fdd67.js": "/precache-manifest.fc3e915393a0fd4e0e9f3a45573fdd67.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.064eeedf.chunk.css.map": "/static/css/main.064eeedf.chunk.css.map",
+    "static/js/2.31ac0301.chunk.js.LICENSE.txt": "/static/js/2.31ac0301.chunk.js.LICENSE.txt",
+    "static/media/RotateChampList.css": "/static/media/champion.38fb1e86.png",
+    "static/media/SmallChampImg.css": "/static/media/champion16.79137220.png",
+    "static/media/noIcon.jpg": "/static/media/noIcon.9b4fd0eb.jpg",
+    "static/media/silver_3.png": "/static/media/silver_3.180877e8.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.7de7db3c.js",
-    "static/js/2.3b58c478.chunk.js",
-    "static/css/main.b90e24d5.chunk.css",
+    "static/js/runtime-main.01481b62.js",
+    "static/js/2.31ac0301.chunk.js",
+    "static/css/main.064eeedf.chunk.css",
     "static/js/main.16a225ad.chunk.js"
   ]
 }
