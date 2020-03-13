@@ -28,7 +28,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "homepage": "https://navydrum.github.io/",
+  "homepage": "https://navydrum.github.io/pr",
   "browserslist": {
     "production": [
       ">0.2%",
