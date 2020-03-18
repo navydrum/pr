@@ -54,7 +54,7 @@ const MainPresenter = ({ rotateChampArr, loading, searchTerm, handleSubmit, erro
             {rotateChampArr.map((value, index) => <Link to={{pathname:"/{value}",
                                                             state : {
                                                                 key : value
-                                                            }}}><div key={index} className={'rotateChampArea champImg i'+value}></div></Link>)}
+                                                            }}}><div key={value} className={'rotateChampArea champImg i'+value}></div></Link>)}
         </RotateSection>
     )}
       

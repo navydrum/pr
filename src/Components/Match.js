@@ -169,6 +169,13 @@ div{
 }
 `;
 
+const matchTeam = styled.div`
+float: left;
+width: 50%;
+`;
+    
+
+
 const Match = ({ id, win, data }) => (
 <Container>
     <Backdrop bgColor={`${win}`}></Backdrop>
@@ -249,7 +256,7 @@ const Match = ({ id, win, data }) => (
                             {getInGameItem(data)[5] !== "" ? <img src={getInGameItem(data)[5]} alt="처형인의 대검"></img> : ""}
                         </Item>
                     </GameItemList>
-            </GameItem>
+        </GameItem>
             <div className="matchWithPlayer">
                 <div className = "matchTeam" >
                     {data.matchInfo.blue.player.map(player => (
@@ -263,12 +270,10 @@ const Match = ({ id, win, data }) => (
                 <div className = "matchTeam" >
                         {data.matchInfo.red.player.map(player => (
                         <div className="userMatchArea" key={player.ChampionId}>
-                            
                                 <div className={'spc16 i'+player.ChampionId}/>
                                 <div className="userMatchId">{player.SummonerName}</div>
-                            
                         </div>))}
-                    </div>
+                </div>
             </div>
     </Content>
 </Container>
@@ -283,8 +288,8 @@ function getInGameItem(allData){
      }
      var urlArr = [];
      if(t.length > 0){
-         for(var i in t){
-             var url = t[i] != 0 ? "http://ddragon.leagueoflegends.com/cdn/10.3.1/img/item/"+t[i]+".png" : "";
+         for(var j in t){
+             var url = t[j] !== 0 ? "http://ddragon.leagueoflegends.com/cdn/10.3.1/img/item/"+t[j]+".png" : "";
              urlArr.push(url);
          }
      }
@@ -321,13 +326,13 @@ function msToTime(duration) {
 
     minutes = (minutes < 10) ? "0" + minutes : minutes;
     seconds = (seconds < 10) ? "0" + seconds : seconds;
-    if(hours != 0){
+    if(hours !== 0){
         hours = (hours < 10) ? "0" + hours : hours;
         return hours + "시간 " + minutes + "분 " + seconds + "초"
     }else{
         return minutes + "분 " + seconds + "초 "
     }
-    return hours + ":" + minutes + ":" + seconds + "." + milliseconds;
+    //return hours + ":" + minutes + ":" + seconds + "." + milliseconds;
 }
 
 function getMultiKilled(cnt){

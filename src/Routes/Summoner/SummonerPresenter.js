@@ -119,9 +119,9 @@ const SummonerPresenter = ({summonerData, matchData, error, loading}) => loading
             <UserContent>
                 <ItemContaitner>
                     <SummonerID><span>{summonerData.name}</span></SummonerID>
-                    <Item><span>레더랭킹</span></Item>
-                    <Item><span>{summonerData.name}</span></Item>
-                    <Item><span>{summonerData.name}</span></Item>
+                    <Item><span>레더랭킹 : </span></Item>
+                    <Item><span>소환사 레벨 : {summonerData.summonerLevel}</span></Item>
+                    <Item><span>최근 업데이트 : {summonerData.matchUpdateDate}</span></Item>
                 </ItemContaitner>
             </UserContent>
         </Content>
